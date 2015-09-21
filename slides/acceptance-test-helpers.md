@@ -1,7 +1,5 @@
 ## Acceptance test helpers
 
-One of the major issues in testing web applications<br>is that all code is __*event-driven*__.
-
 Ember includes several helpers to facilitate acceptance testing. There are two types of helpers:<br>__*asynchronous*__ and __*synchronous*__.
 
 
@@ -107,3 +105,6 @@ export default Ember.Test.registerAsyncHelper('dblclick',
 );
 
 ```
+
+Note:
+Finally, don't forget to add your helpers in tests/.jshintrc and in tests/helpers/start-app.js. In tests/.jshintrc you need to add it in the predef section, otherwise you will get failing jshint tests:

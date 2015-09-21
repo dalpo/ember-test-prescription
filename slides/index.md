@@ -1,10 +1,11 @@
 ## Table of contents:
 
 * Testing fable
-* Testing tools
+* Default testing tools
 * Acceptance tests
-* Acceptance tests helpers
+* Acceptance test helpers
 * Unit testing
+* Unit test helpers
 * Testing components
 * Testing controllers
 * Testing Routes

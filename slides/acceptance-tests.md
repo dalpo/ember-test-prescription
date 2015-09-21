@@ -28,7 +28,7 @@ installing acceptance-test
 ```
 
 
-### Give me the code!
+### Show Me The Code!
 
 tests/acceptance/user-can-login-via-form-test.js
 
