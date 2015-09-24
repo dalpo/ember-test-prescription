@@ -27,7 +27,7 @@ moduleForModel('some-thing', 'Unit | Model | some thing', {
 });
 
 test('calling testMethod updated foo', function(assert) {
-  var someThing = this.subject().create({});
+  var someThing = this.subject({});
 
   someThing.testMethod();
 
@@ -59,7 +59,7 @@ moduleForModel('some-thing', 'Unit | Model | some thing', {
 });
 
 test('computedFoo correctly concats foo', function(assert) {
-  var someThing = this.subject().create({});
+  var someThing = this.subject({});
 
   someThing.set('foo', 'baz');
 
@@ -91,7 +91,7 @@ moduleForModel('some-thing', 'Unit | Model | some thing', {
 });
 
 test('doSomething observer sets other prop', function() {
-  var someThing = this.subject().create();
+  var someThing = this.subject({});
   someThing.set('foo', 'baz');
   equal(someThing.get('other'), 'yes');
 });
